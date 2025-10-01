@@ -19,3 +19,15 @@ def running_total(values: list[float]) -> float:
     for value in values:
         total += value
     return total
+
+
+def subtract(a: float, b: float) -> float:
+    """Return the difference of two numbers."""
+    return a - b
+
+
+def divide(a: float, b: float) -> float:
+    """Return the quotient of two numbers."""
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
